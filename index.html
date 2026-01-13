@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskMaster - To-Do App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚀 TaskMaster</h1>
+            <p>Organize your day, one task at a time</p>
+        </div>
+
+        <div class="input-section">
+            <div class="input-group">
+                <input type="text" id="taskInput" placeholder="What needs to be done?" maxlength="100">
+                <input type="datetime-local" id="taskDateTime">
+                <button class="add-btn" id="addBtn">Add Task</button>
+            </div>
+        </div>
+
+        <div class="tasks-section">
+            <div class="stats">
+                <span id="totalTasks">0 tasks</span>
+                <span id="completedTasks">0 completed</span>
+            </div>
+            <ul class="task-list" id="taskList">
+                <li class="empty-state">Add your first task above! 🎯</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
